@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="진동이 울리는 시간을 밀리초 단위로 입력하세요 "
+    android:gravity="center"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/milliSecond"
+        android:inputType="number"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/vibrate"
+        android:text="진동 울리기"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="패턴진동을 반복하여 울립니다"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/vibratePattern"
+            android:text="패턴 진동 울리기"
+            android:layout_width="0px"
+            android:layout_height="match_parent" android:layout_weight="1"/>
+        <Button
+            android:id="@+id/stop"
+            android:text="진동 멈춤"
+            android:layout_width="0px"
+            android:layout_height="match_parent" android:layout_weight="1"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
